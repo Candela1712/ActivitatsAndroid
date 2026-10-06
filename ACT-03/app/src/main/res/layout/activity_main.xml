@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingVertical="30dp"
+    android:paddingHorizontal="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI CALCULATOR"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hombre"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="60dp"
+        app:cardBackgroundColor="@color/grisBoton"
+        app:layout_constraintEnd_toStartOf="@+id/mujer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/mansimbol"
+            app:tint="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="MALE"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="80dp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mujer"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        app:cardBackgroundColor="@color/grisBoton"
+        app:layout_constraintStart_toEndOf="@+id/hombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="15dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/womansimbol"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:tint="@color/white">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FEMALE"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="80dp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width=""
+        android:layout_height=""
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
