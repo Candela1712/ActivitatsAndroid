@@ -59,7 +59,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<MaterialButton>(R.id.btnCalcular).setOnClickListener {
-            // IMC (sistema imperial) = peso(lb) * 703 / altura(in)^2
             val bmi = peso * 703.0 / (altura * altura)
 
             val intent = Intent(this, ResultActivity::class.java)

@@ -4,7 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="fondo">#0a0e21</color>
     <color name="boton">#1d1e33</color>
-    <color name="botonSelec">#111328</color>
+    <color name="botonSeleccionado">#111328</color>
     <color name="grisTexto">#858690</color>
     <color name="lila">#5B2FB0</color>
+    <color name="verde">#24D876</color>
 </resources>
